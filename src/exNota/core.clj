@@ -13,7 +13,7 @@
     (println "Turma excelent!")
     (if (>= media 60)
       (println "Bom desempenho!")
-      (println "💔"))))
+      (println "É necessário melhorar!"))))
 
 (defn -main []
   (print "Quantos alunos na turma? ") (flush)
@@ -38,4 +38,5 @@
           (println (str "Média da Turma: " (format "%.2f" media)))
           (println "Alunos aprovados:" @aprovados)
           (calcDesempenho media))
+
         (println "Nenhum aluno foi inserido.")))))
